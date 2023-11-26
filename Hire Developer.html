@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Poppins:wght@700;800&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Hire Developer </title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("jRUMY4WXPb7fzuhst");
+   })();
+</script>
+
+</head>
+<style>
+    .title {
+        text-align: center;
+        font-size: 44px;
+        padding: 50px;
+        color: #fff;
+    }
+
+    .main {
+        display: inline-block;
+        margin-bottom: 50px;
+
+
+        position: relative;
+        width: 150px;
+        text-align: left;
+    }
+
+    #label2 {
+        width: 100%;
+        position: absolute;
+        line-height: 45px;
+        top: 0px;
+        left: 0px;
+        background-color: #fff;
+        padding-left: 20px;
+        font-weight: 700;
+        -webkit-transition: 0.04s ease-in-out;
+        transition: 0.04s ease-in-out;
+    }
+
+    .list1 {
+        width: 200px;
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        left: 0px;
+        border-top: 1px solid #eee;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        background-color: white;
+        color: #23255c;
+    }
+
+    .item22 {
+        width: 100%;
+        line-height: 45px;
+        padding-left: 20px;
+        background-color: #fff;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        font-weight: 400;
+        color: #23255c;
+    }
+
+    .item:hover {
+        background-color: #eee;
+    }
+
+    .list-5 {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+        z-index: 10;
+    }
+
+    #drop-5:checked~.list-5 {
+        visibility: visible;
+        opacity: 2;
+    }
+
+    #drop-5:checked~.list-5 {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    .inputemail{
+            width: 100%;
+            /* padding: 12px 20px; */
+            /*margin: 8px 0;*/
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid rgb(1, 1, 69);
+        }
+
+        .file_input{
+    background-color: #316EEC;
+    border-radius: 10px;
+    padding:8px;
+    opacity: 50%;
+  }
+
+  .file_input_label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: full;
+    margin: 0;
+  }
+
+
+
+    
+
+    .title {
+  text-align: center;
+  font-size: 44px;
+  padding: 50px;
+  color: #fff;
+}
+.main {
+  display: inline-block;
+margin-right: -50px;
+  position: relative;
+  width: 150px;
+  margin-top: -10px;
+
+}
+#label2 {
+  width: 100%;
+  position: absolute;
+  line-height: 45px;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  padding-left: 20px;
+  
+  -webkit-transition: 0.04s ease-in-out;
+  transition: 0.04s ease-in-out;
+}
+.list {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 0px;
+  border-top: 1px solid #eee;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: white;
+}
+.item {
+  width: 200px;
+  line-height: 45px;
+  padding-left: 20px;
+  background-color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-weight: 400;
+  font-size: 11px;
+  color: black;
+}
+.item:hover {
+  background-color: #eee;
+}
+.list-4 {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    z-index: 10;
+}
+#drop-4:checked~ .list-4 {
+    visibility: visible;
+    opacity: 2;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.title {
+  text-align: center;
+  font-size: 44px;
+  
+  color: #fff;
+}
+.main {
+  display: inline-block;
+ margin-bottom: 50px;
+
+ 
+  position: relative;
+  width: 150px;
+  text-align: left;
+}
+#label2 {
+  width: 98px;
+  position: absolute;
+  line-height: 45px;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+
+  font-weight: 700;
+  -webkit-transition: 0.04s ease-in-out;
+  transition: 0.04s ease-in-out;
+}
+.list1{
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 0px;
+  border-top: 1px solid #eee;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: white;
+  color: #23255c;
+}
+.item22 {
+  width: 100%;
+  line-height: 45px;
+  padding-left: 20px;
+  background-color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-weight: 400;
+  color: #23255c;
+}
+.item:hover {
+  background-color: #eee;
+}.list-5 {
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  z-index: 10;
+}
+#drop-5:checked~ .list-5 {
+  visibility: visible;
+  opacity: 2;
+}
+#drop-5:checked~ .list-5 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+#test-webkit::-webkit-input-placeholder{
+    color: white;
+}  
+
+#status.success{
+    background-color:rgb(211,250,153) ;
+    animation: status 4s ease  forwards;
+}
+
+#status.error{
+    background-color: rgb(211,250,153);
+    animation: status 4s ease  forwards;
+}
+#Name::-webkit-input-placeholder { color:black; }
+#Email::-webkit-input-placeholder { color:black; }
+#Phoneno::-webkit-input-placeholder { color:black; }
+#City::-webkit-input-placeholder { color:black; }
+#Apply::-webkit-input-placeholder { color:black; }
+#file-input::-webkit-input-placeholder { color:black; }
+</style>
+
+<body style="overflow-x: hidden;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            
+            <img src="img/logo.png" alt="" style="height:45px; width:260px; margin-left: 30px; padding-left: 40px;">
+
+
+            <div class="container-fluid" style="margin-right:54px;">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="#">
+                        <path d="M0.0634766 0H57.542V55H0.0634766V0Z" fill="white" fill-opacity="0.01" />
+                        <path d="M9.64355 12.0312H47.9626" stroke="#316EEC" stroke-width="6.16667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M28.8037 22.3438H47.9632" stroke="#316EEC" stroke-width="6.16667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M28.8037 32.6562H47.9632" stroke="#316EEC" stroke-width="6.16667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.64355 42.9688H47.9626" stroke="#316EEC" stroke-width="6.16667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M19.2233 21.7708L9.64355 27.5L19.2233 33.2291V21.7708Z" fill="#316EEC" stroke="#316EEC"
+                            stroke-width="6.16667" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav " style="margin-left:100px;" >
+                        <li class="nav-item dropdown ">
+
+                            <a href="Homepage.html" style="color: #23255c; font-family: Poppins;margin:12px ">HOME</a>
+
+                        </li>
+                        <li class="nav-item dropdown ">
+
+                            <a href="company.html" style="color: #23255c; ;  font-family: Poppins; ">OUR
+                                COMPANY</a>
+
+                        </li>
+
+
+                        <li class="main">
+                            <input type="checkbox" id="drop-4" hidden>
+                            <label id="label2" class="dropHeader dropHeader-4" for="drop-4">
+
+                                <span style="color: #23255c; font-family: Poppins; font-weight: 200; "> SERVICES</span>
+                            </label>
+                            <div class="list list-4">
+                                <div> <a href="Services.html" class="item">SERVICES</a></div>
+                                <div> <a href="Web Development services (detail).html" class="item">Web Development</a></div>
+                                <div> <a href="Mobile  services(details).html" class="item">Mobile App Development</a></div>
+                                <div> <a href="Graphics Design.html" class="item">Graphics Design</a></div>
+                                <div> <a href="Digital Marketing.html" class="item">Digital Marketing</a></div>
+                                <div> <a href="Front End.html" class="item">Front End Development </a></div>
+                                <div> <a href="Enterprise Solution.html" class="item">Enterprise Solutions</a></div>
+                                <div> <a href="Back End.html" class="item">Back End Development</a></div>
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+
+
+                            <a href="Hire Developer.html" style="color: #23255c; margin: 10px;font-family: Poppins; font-weight: 700; margin-top:30px; "> HIRE DELVOPER</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+
+
+                            <a href="faq.html" style="color: #23255c; margin: 10px;font-family: Poppins;"> FAQ'S</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <a href="Contactus.html" style="color: #23255c; margin: 10px;font-family: Poppins; ">
+                                CONTACT
+                                US</a>
+                        </li>
+                    </ul>
+
+                </div>
+             
+                    <div class="main">
+                        <input type="checkbox" id="drop-5" hidden>
+                        <label id="label2" class="dropHeader dropHeader-5" for="drop-5">
+                            <svg width="48" height="45" viewBox="0 0 58 55" fill="none" xmlns="#"
+                                style="float:center;margin-top:2px">
+                                <path d="M0.0634766 0H57.542V55H0.0634766V0Z" fill="white" fill-opacity="0.01" />
+                                <path d="M9.64355 12.0312H47.9626" stroke="#316EEC" stroke-width="6.16667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M28.8037 22.3438H47.9632" stroke="#316EEC" stroke-width="6.16667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M28.8037 32.6562H47.9632" stroke="#316EEC" stroke-width="6.16667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.64355 42.9688H47.9626" stroke="#316EEC" stroke-width="6.16667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19.2233 21.7708L9.64355 27.5L19.2233 33.2291V21.7708Z" fill="#316EEC"
+                                    stroke="#316EEC" stroke-width="6.16667" stroke-linejoin="round" />
+
+
+                            </svg>
+                        </label>
+                        <div class="list1 list-5">
+                            <div> <a href="company.html#how1" class="item22">Who We Are</a></div>
+                            <div> <a href="company.html#how" class="item22">How We Work</a></div>
+                            <div> <a href="company.html#how2" class="item22">Client Testimonial</a></div>
+                            <div> <a href="company.html#how3" class="item22">Career Overview</a></div>
+                            <div> <a href="blogpage.html" class="item22">Blog</a></div>
+                            <div> <a href="Homepage.html#tec" class="item22">Technologies</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </nav>
+    </header>
+    <br>
+    <img src="img/we are hiring.png" style="height: 400px; width: 100%;">
+    <br>
+
+    
+    <section>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div style=" font-family: Roboto; margin-left: 430px;">
+                <h1 style="font-family: Lexend; color:#316EEC; ">Current <span
+                        style="color: #23255c; font-family: Lexend;"> Openings</span></h1>
+            </div>
+            <br>
+            <div style=" font-family: Roboto; margin-left:300px;">
+                <h3 style="font-family: Lexend; color:gray; font-size: 15px;">Check out our carrier opportunities in
+                    detail and fill up the screening details.</h3>
+            </div>
+
+            <br>
+
+            <div class="container"  >
+                <div class="row">
+                    <!-- <div class="col-4" style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                        background-size: cover; border-radius: 15px;
+                        background-position:center; padding: 50px; ">  -->
+                        <div class="col-4"  style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                        background-size: 350px; border-radius: 15px;background-position:center; padding: 50px;" >
+
+                        <h5
+                            style="color:white;font-family: Roboto; font-weight: bold;  font-size: 20px; ">
+                            Digital Marketing <br>Intern</h5>
+                    
+
+                        <hr style="height:2px;border-width:0;color:white;background-color:white;">
+
+                       <h3 style="color: white; font-size: 20px;">2 Opening</h3>
+                       <h5 style="color: white; font-size: 15px;">Exp: 0 to 0 years</h5> 
+                       <br>
+                       <br>
+                    <a href="Hire Developer Details.html">   <button type="submit" style="font-size: 10px; padding: 12px 28px; align-items: end; text-align: end;  background:#316EEc !important;color: white; 
+                       background:#316eec;
+                       margin-top:1px;
+                       border-radius:10px;
+                       cursor: pointer;"><b>SUBMIT</b></button> </a>
+
+                       
+                    </div>
+
+                    <div class="col-4"  style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                    background-size: 350px; border-radius: 15px;background-position:center; padding: 50px;" >
+
+
+                        <h5
+                            style="color:white;font-family: Roboto; font-weight: bold;  font-size: 20px; ">
+                            Digital Marketing <br>Intern</h5>
+                    
+
+                        <hr style="height:2px;border-width:0;color:white;background-color:white;">
+
+                       <h3 style="color: white; font-size: 20px;">2 Opening</h3>
+                       <h5 style="color: white; font-size: 15px;">Exp: 0 to 0 years</h5> 
+                       <br>
+                       <br>
+                    <a href="Hire Developer Details.html">   <button type="submit" style="font-size: 10px; padding: 12px 28px; align-items: end; text-align: end;  background:#316EEc !important;color: white; 
+                       background:#316eec;
+                       margin-top:1px;
+                       border-radius:10px;
+                       cursor: pointer;"><b>SUBMIT</b></button> </a>
+
+                       
+                    </div>
+
+                    <div class="col-4"  style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                    background-size: 350px; border-radius: 15px;background-position:center; padding: 50px;" >
+
+                        <h5
+                            style="color:white;font-family: Roboto; font-weight: bold;  font-size: 20px; ">
+                            Digital Marketing <br>Intern</h5>
+                    
+
+                        <hr style="height:2px;border-width:0;color:white;background-color:white;">
+
+                       <h3 style="color: white; font-size: 20px;">2 Opening</h3>
+                       <h5 style="color: white; font-size: 15px;">Exp: 0 to 0 years</h5> 
+                       <br>
+                       <br>
+                    <a href="Hire Developer Details.html">   <button type="submit" style="font-size: 10px; padding: 12px 28px; align-items: end; text-align: end;  background:#316EEc !important;color: white; 
+                       background:#316eec;
+                       margin-top:1px;
+                       border-radius:10px;
+                       cursor: pointer;"><b>SUBMIT</b></button> </a>
+
+                       
+                    </div>
+
+
+                    
+                </div>
+
+
+
+
+                
+            </div>
+
+            <div class="container" style="padding: 20px;" >
+                <div class="row">
+                    <div class="col-4"  style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                    background-size: 350px; border-radius: 15px;background-position:center; padding: 50px;" >
+
+                        <h5
+                            style="color:white;font-family: Roboto; font-weight: bold;  font-size: 20px; ">
+                            Digital Marketing <br>Intern</h5>
+                    
+
+                        <hr style="height:2px;border-width:0;color:white;background-color:white;">
+
+                       <h3 style="color: white; font-size: 20px;">2 Opening</h3>
+                       <h5 style="color: white; font-size: 15px;">Exp: 0 to 0 years</h5> 
+                       <br>
+                       <br>
+                    <a href="Hire Developer Details.html">   <button type="submit" style="font-size: 10px; padding: 12px 28px; align-items: end; text-align: end;  background:#316EEc !important;color: white; 
+                       background:#316eec;
+                       margin-top:1px;
+                       border-radius:10px;
+                       cursor: pointer;"><b>SUBMIT</b></button> </a>
+
+                       
+                    </div>
+
+                    <div class="col-4"  style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                    background-size: 350px; border-radius: 15px;background-position:center; padding: 50px;" >
+
+
+                        <h5
+                            style="color:white;font-family: Roboto; font-weight: bold;  font-size: 20px; ">
+                            Digital Marketing <br>Intern</h5>
+                    
+
+                        <hr style="height:2px;border-width:0;color:white;background-color:white;">
+
+                       <h3 style="color: white; font-size: 20px;">2 Opening</h3>
+                       <h5 style="color: white; font-size: 15px;">Exp: 0 to 0 years</h5> 
+                       <br>
+                       <br>
+                    <a href="Hire Developer Details.html">   <button type="submit" style="font-size: 10px; padding: 12px 28px; align-items: end; text-align: end;  background:#316EEc !important;color: white; 
+                       background:#316eec;
+                       margin-top:1px;
+                       border-radius:10px;
+                       cursor: pointer;"><b>SUBMIT</b></button> </a>
+
+                       
+                    </div>
+
+                    <div class="col-4"  style=" background-image: url(img/Rectangle222.png);  background-repeat: no-repeat;
+                    background-size: 350px; border-radius: 15px;background-position:center; padding: 50px;" >
+
+                        <h5
+                            style="color:white;font-family: Roboto; font-weight: bold;  font-size: 20px; ">
+                            Digital Marketing <br>Intern</h5>
+                    
+
+                        <hr style="height:2px;border-width:0;color:white;background-color:white;">
+
+                       <h3 style="color: white; font-size: 20px;">2 Opening</h3>
+                       <h5 style="color: white; font-size: 15px;">Exp: 0 to 0 years</h5> 
+                       <br>
+                       <br>
+                    <a href="Hire Developer Details.html">   <button type="submit" style="font-size: 10px; padding: 12px 28px; align-items: end; text-align: end;  background:#316EEc !important;color: white; 
+                       background:#316eec;
+                       margin-top:1px;
+                       border-radius:10px;
+                       cursor: pointer;"><b>SUBMIT</b></button> </a>
+
+                       
+                    </div>
+
+
+                    
+                </div>
+
+
+
+
+                
+            </div>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <div class="container">
+
+
+            <div class="bg-1"
+                style="background-image: url(img/23.png); background-position:880px 2px;background-repeat: no-repeat; background-size: 20%; margin-top: -30px;">
+                <div class="bg-2"
+                    style="background-image: url(img/23.png); background-position:left 5px  bottom -15% ;background-repeat: no-repeat; background-size: 20%;">
+
+
+
+                    <br><br><br>
+
+
+                    <div class="form-box" style="border-width: 1.5px;
+        height: 500px;
+        width: 1000px;
+        margin-left: 60px;
+        border:  3px solid transparent;
+border-image: linear-gradient( to top right,#ffffff, #23255c,#23255c,#ffffff )1;
+        color: white;
+border-radius: 10px;
+/*background: 
+   linear-gradient(to right, white, white), 
+   linear-gradient(to top right,#ffffff,  #23255c,#23255c , #ffffff); 
+ background-clip: padding-box, border-box;
+ background-origin: padding-box, border-box;*/
+   background-color: rgba(255, 255, 255, 0.20);">
+
+                        <form action="https://formsubmit.co/your@email.com" method="POST"
+                            onsubmit="sendemail(); reset(); return false">
+                            <br>
+                            <h2
+                                style="color: #23255c; font-weight: bold; font-family: Roboto ; text-align: center; font-size: 40px;">
+                                <span style="color: #316eec;">
+                                    Fill Your Contact Information</span>
+                            </h2>
+                            <br>
+                            <div class="row">
+                                <div class="col-4">
+                                    <form action="#" method="post">
+                                        <div class="form-group" style="font-weight: 900; margin-left: 20px;">
+                                            <label33 for="name"
+                                                style="font-style:Poppins; font-size: 20px;color:#316EEC; "><b>Name</b>
+                                            </label33>
+                                            <input class="form-control" id="Name" type="text" name="name"
+                                                placeholder="Enter Your Name..."
+                                                style="border-radius: 10px;color:black; border: solid 1px; background-color:#316EEC;width: 450px; height: 50px; margin-top:1px; opacity: 50%;"
+                                                required>
+                                        </div>
+                                </div>
+
+                                <div class="col-4" style="margin-left: 150px; border-radius: 10px;">
+                                    <div class="form-group " style="font-weight: 900;">
+                                        <label33 for="email" style="font-style: Poppins; font-size: 20px;color:#316eec">
+                                            <b> Email</b>
+                                        </label33>
+                                        <input class="form-control" id="Email" type="email" name="email"
+                                            placeholder="Enter Your Email... "
+                                            style="border-radius: 10px; background-color: #316eec;color:#23255c;  width: 480px; height: 50px; opacity: 50%;"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <form action="#" method="post">
+                                        <div class="form-group" style="font-weight: 900; margin-left: 20px;">
+                                            <label33 for="number"
+                                                style="font-style: Poppins; font-size: 20px;color:#316EEC "><b>Phone
+                                                    No.</b></label33>
+                                            <input class="form-control" id="Phoneno" type="number" name="number"
+                                                placeholder="Enter Your Phone No..."
+                                                style="border-radius: 10px;color:black; border: solid 1px; background-color:#316EEC;width: 450px; height: 50px; margin-top:1px; opacity: 50%;"
+                                                required>
+                                        </div>
+                                </div>
+
+                                <div class="col-4" style="margin-left: 150px; border-radius: 10px;">
+                                    <div class="form-group " style="font-weight: 900;">
+                                        <label33 for="city" style="font-style: Poppins; font-size: 20px;color:#316eec">
+                                            <b>City</b>
+                                        </label33>
+                                        <input class="form-control" id="City" type="text" name="city"
+                                            placeholder="Enter Your City... "
+                                            style="border-radius: 10px; background-color: #316eec;color:#23255c;  width: 480px; height: 50px;opacity: 50%;"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <form action="#" method="post">
+                                        <div class="form-group" style="font-weight: 900; margin-left: 20px;">
+                                            <label33 for="hiredeveloper"
+                                                style="font-style:Poppins; font-size: 20px;color:#316EEC "><b>Apply
+                                                    For:</b></label33>
+                                            <input class="form-control" id="Apply" type="text" name="apply"
+                                                placeholder="Enter Position"
+                                                style="border-radius: 10px;color:black; border: solid 1px; background-color:#316EEC;width: 950px; height: 50px; margin-top:1px; opacity: 50%;"
+                                                required>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group" style="font-weight: 900; margin-left: 40px;">
+                                    <label for="file-input" style="font-style:Poppins; font-size: 20px;color:#316EEC">
+                                        Attachment :</label>
+                                    <div class="file_input" style="width: 450px;">
+                                        <input type="file" button hidden class="form-control" name="upload"
+                                            id="file-input" placeholder="upload File">
+                                        <label for="file-input" class="file_input_label">
+                                            <span>Upload File</span>
+                                            <i class="fa-solid fa-paperclip"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6" onclick="sendemail()">
+
+                                    <!--input class="btn"
+                        style="background-color: #316eec; color:#ffffff;  font-size:15px; font-family: Poppins; font-weight:700px; border-radius: 10px; margin-top: 35px; margin-left:350px;"
+                        type="submit" value="SUBMIT"  /!-->
+
+                                    <label for="submit">
+                                        <button
+                                            style="background-color: #316eec; color:#ffffff;  font-size:15px; font-family: Poppins; font-weight:700px; border-radius: 10px; margin-top: 35px; margin-left:300px; padding: 12px 28px;"
+                                            type="submit">
+                                            <b>SUBMIT</b>
+                                        </button>
+                                    </label>
+                                </div>
+                            </div>
+
+
+
+
+
+                    </div>
+                    <br>
+                </div>
+                <script src="https://smtpjs.com/v3/smtp.js">
+                </script>
+
+                <script>
+                    function sendemail() {
+                        let name = document.getElementById("Name").value;
+                        let email = document.getElementById("Email").value;
+                        let number = document.getElementById("Phoneno").value;
+                        let city = document.getElementById("City").value;
+                        let apply = document.getElementById("Apply").value;
+                        let upload = document.getElementById("file-input").value;
+                        console.log("first")
+
+
+                        Email.send({
+                            Host: "smtp.elasticemail.com",
+                            Username: "mailto:shivampatel22122001@gmail.com",
+                            Password: "32833295CE6DB9F836913A74DBC0002A7443",
+                            To: 'mailto:hetalkpatel1710@gmail.com',
+                            From: "mailto:shivampatel22122001@gmail.com",
+                            Subject: "Hire Developer form",
+                            Body: "Name:" + name + "<br/> Email:" + email + "<br/> Phoneno:" + number + "<br/> City:" + city + "<br/> Apply:" + apply + "<br/> file-input :" + upload
+                        }).then(
+                            () => alert("ok")
+                        );
+
+                    }
+                </script>
+            </div>
+        </div>
+
+
+
+
+
+        <br><br><br>
+    </section>
+
+    <!--section>
+    <div class="container" style="margin-left: 260px;">
+
+    
+        <div id="container">
+    
+            <div class="box" style="background-color: #23255c; border-radius: 25px; width: 680px;
+            height: 350px;
+            font-size: 20px;
+            background: #23255c;
+            color: #fff;
+            text-align: left;">
+                <br><br>
+                <h1 style="font-family:Roboto;text-align: left; margin-left:30px;font-weight: bold;">Ready to take <br>
+                    your <span style="font-family:Poppins;font-style: italic; font-weight: lighter;"> Business'IT
+                    </span>
+                    <br>to the Next
+                    Level?
+                </h1>
+                <br><br><br> <img src="img/Artboard 12.png" alt=""
+                    style="height:300px;width: 675px; margin-top:-200px;position:absolute;opacity: 40% ;">
+    
+                <div style="text-align:center; font-family: Poppins; background-image: url(img/Artboard\ 1-8.png); ">
+    
+                    <button type="button"
+                        style="color: black; background-color: #316eec; margin-right:-375px; margin-top:-38px; border-radius: 10px; font-size: 10px; height: 40px;"
+                        class="btn">GET FREE
+                        CONSULTATION <img src="img/Arrow Icon.png" alt="" style="width: 55px;"></button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </section!-->
+
+    <section style="margin-left: 200px; padding: 60px;">
+        <div id="container">
+    
+             
+            <div class="box" style="
+            background-color: #23255c;
+            border-radius: 25px;
+            width: 760px;
+            height: 350px;
+            font-size: 20px;
+            background: #23255c;
+            color: #fff;
+             
+            position: relative;
+            overflow: hidden;
+          ">
+                <br><br>
+    <div style="
+    position: relative;
+    z-index: 10;
+    "><h1 style="font-family:Roboto;text-align: left; margin-left:30px;font-weight: bold;">Ready to take <br>
+                    your <span style="font-family:Poppins;font-style: italic; font-weight: lighter;"> Business'IT
+                    </span>
+                    <br>to the Next
+                    Level?
+                </h1>
+                <!-- <br><br><br> <img src="img/Artboard 12.png" alt=""
+                    style="height:270px;width: 775px; margin-top:-180px;position:absolute;opacity: 80% ;"> -->
+    
+                <a href="Contactus.html"> <button type="button " class="btn btn-md " style="color: black; background-color: #316eec;padding: 0px 30px 50px 20px  ; margin-top:60px; float: right;margin-right:20px;  border-radius: 10px; font-size: 10px; height: 40px; "> <span style="font-size: 12px;font-weight: 700 ;  font-family: poppins;">GET FREE
+                                CONSULTATION</span><img src="img/icons8-advance-unscreen.gif" alt="" style="margin-left:20px"></button></a></div>
+                
+                 <div style="
+                text-align:center;
+                font-family: Poppins;
+                background-image: url(img/Artboard\ 2-8\ \(white\).png);
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height:200px;
+                width: 780px;
+                
+                
+                position: absolute;
+                bottom: -60px;
+                z-index: 1;
+                opacity: 0.3;
+                ">
+    
+                    
+                </div>
+            </div>
+            <div style="
+            text-align:center;
+            font-family: Poppins;
+           
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:200px;
+            width: 780px;
+            
+            
+            position: absolute;
+            bottom: -60px;
+            z-index: 1;
+            opacity: 0.3;
+            ">
+
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+    
+    
+            <div class="row">
+                <br>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-4">
+     <br><br>                        <img src="img/honeyy web footer icon.gif" alt="" style="height: 70px;width:70px">
+                        </div>
+                        <div class="col-8">
+                            
+                            <h2 style="color: #23255c; font-weight: bold; padding: 0px 0px 0px 10px;">Newsletter</h2>
+                            <div class="col-10" style="padding: 10px;">
+                                <form onsubmit="emailSend(); reset(); return false;">
+                                    <div class="input">
+                                        <div class="row" style="padding: 0px 0px 0px 10px;">
+                                            <div class="col-6" style=" padding: 0px 0px 0px 5px;" >
+                                                <input type="email" class="inputemail" name="email" id="Email2"
+                                            placeholder="Email Address" style="width: 10pc;">
+        
+                                            </div>
+                                            
+                                            <div class="col-6" style=" margin-left:60px; margin-right: -70px;" onclick="emailSend()">
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="color:#23255c; font-size: 15px;margin-left:-15px"></i>
+                                            </div>
+                                        </div>
+                                    
+                                </form>
+        
+                            </div>
+                       
+                        </form>
+        
+                        <script src="https://smtpjs.com/v3/smtp.js">
+                        </script>
+                        <script>
+                            function emailSend() {
+                                let email = document.getElementById("Email").value;
+        
+                                Email.send({
+                                    Host: "smtp.elasticemail.com",
+                                    Username: "mailto:shivampatel22122001@gmail.com",
+                                    Password: "32833295CE6DB9F836913A74DBC0002A7443",
+                                    To: 'mailto:hetalkpatel1710@gmail.com',
+                                    From: "mailto:shivampatel22122001@gmail.com",
+                                    Subject: "Web Development News Letter Mail",
+                                    Body: "Email:" + email
+                                }).then(
+                                    message => alert(message)
+                                );
+        
+        
+                            }
+        
+                        </script>
+                            <div class="row" style="font-size: 35px; ">
+                                <div class="col-3">
+                                    <i class="fa-brands fa-facebook-f" style="color: #23255c; margin-left:-10px"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-instagram" style="color: #23255c;margin-left:-10px "></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-linkedin" style="color: #23255c;margin-left:-10px"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-threads" style="color: #23255c;margin-left:-10px"></i>
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-3" >
+    
+                            <h2 style="color: #23255c; font-weight: bold; font-size: 22px; "> Explore</h2>
+                            <a href="company.html">
+                                <h6 style="font-size: 12px;  color: #23255c;
+                                font-family: Poppins;">OUR COMPANY</h6>
+                            </a>
+                            <a href="Services.html">
+                                <h6  style="font-size: 12px;  color: #23255c;font-family: Poppins;">SERVICES</h6>
+                            </a>
+                            <a href="Hire Developer.html">
+                                <h6 style="font-size: 12px; color: #23255c;font-family: Poppins;">HIRE DEVLOPER</h6>
+                            </a>
+                            
+                            <a href="faq.html">
+                                <h6 style="font-size: 12px;  color: #23255c;font-family: Poppins;">FAQ'S</h6>
+                            </a>
+                            <a href="Contactus.html">
+                                <h6  style="font-size: 12px; color: #23255c;font-family: Poppins;">CONTACT</h6>
+                            </a>
+                        </div>
+                            <div class="col-2" style="
+                             font-family: Poppins;">
+                                <h2 style="color: #23255c; font-weight: bold;  font-size: 22px;"> Contact</h2>
+                                <h6 style="font-size: 12px; color: #23255c;font-family: Poppins;">Email</h6>
+                                <h6 style="font-size: 12px; color: #23255c;font-family: Poppins;">Phone</h6>
+                                <h6 style="font-size: 12px; color: #23255c;font-family: Poppins;">Address</h6>
+                                <h6 style="font-size: 12px; color: #23255c;font-family: Poppins;">Social Media</h6>
+                            </div>
+                            <div class="col-1">
+                                <a href="Contactus.html"> <img src="img/cta.gif "
+                                    style="height: 100px; width: 100px; ; ">
+                            </a>
+                            </div>
+                            <div class="col-4" style="padding-left: 40px;margin-left:50px"  >
+                                <div class="row" style="font-size: 30px; "  >
+                                    <div class="col-2" >
+                                        <i class="fa-solid fa-location-dot" style="color: #23255c;"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p style="font-size:13px;color:#23255c;"> GF-28,29  Nilgiri Apartment 
+                                             B/H Sola Bhagawat,<br>
+                                            Sola, Science City-
+                                            380060</p>
+                                    </div>
+                                    <div class="row" style="margin-left:1px">   
+                                   
+                                   
+                                    <div class="col-1" >
+                                        <i class="fa-solid fa-envelope" style="color: #23255c;"></i>
+                                    </div>
+    
+                                    <div class="col-10">
+                                        <a href="mailto:hello@honeysofttechsolutions.com">
+                                            <p style="font-size:13px;color:#23255c;margin-left:10px;margin-top: 10px; ">
+                                              hello@honeysofttechsolutions.com</p>
+                                        </a>
+                                    </div>
+    
+                                </div>
+                                </div>
+                                <iframe style="    height:100%;
+                                width: 100%; color:	rgb(255, 255, 255); background-color:rgb(202, 195, 195);
+                                color:	rgb(255, 255, 255); background-color:rgb(202, 195, 195);
+                                align-items: flex-end;
+                                display: flex;
+                               
+                                width: 200px;
+                                height: 100px;
+                                font-size: 20px;
+                                background:transparent;
+                                color:rgb(118, 117, 120);
+                                background-color: #c0bcbc;
+                                box-shadow: 0px 2px 5px #666;
+                                border-radius: 12px;"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.3634954358718!2d72.51570177364162!3d23.08378581404425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9cb3b0000001%3A0xc34040eed954e3b4!2sHONEYY%20SOOFTTECH%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1697178979954!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

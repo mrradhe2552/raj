@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&display=swap');
+    </style>
+    </style>
+    <title>Services</title>
+    <style>
+        
+        #container {
+
+            /* --- FLEX --- */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputemail{
+  width: 100%;
+  /* / padding: 12px 20px; /
+  margin: 8px 0; */
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+
+
+}
+        .box {
+            width: 800px;
+            height: 350px;
+            font-size: 20px;
+            background: #23255c;
+            color: black;
+            text-align: left;
+            overflow: hidden;
+            border-radius: 25px;
+
+
+
+        }
+
+        .inputemail::-webkit-input-placeholder {
+            color: white;
+        }
+
+        .box:hover {
+            box-shadow: 0px 5px 20px #333;
+            cursor: pointer;
+
+        }
+
+        .card2 {
+            border: solid 2px;
+            border-radius: 20px;
+            height: 362px;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.20);
+        }
+
+        .card2:hover {
+            box-shadow: 0px 5px 20px #333;
+            cursor: pointer;
+            background-color: #316eec;
+
+        }
+
+        .card2:hover .card2-content::before {
+            color: white;
+
+        }
+
+
+        .title {
+            text-align: center;
+            font-size: 44px;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .main {
+            display: inline-block;
+            margin-right: -50px;
+            position: relative;
+            width: 150px;
+            margin-top: -10px;
+
+        }
+
+        label {
+            width: 100%;
+            position: absolute;
+            line-height: 45px;
+            top: 0px;
+            left: 0px;
+
+            padding-left: 20px;
+            font-weight: 700;
+            -webkit-transition: 0.04s ease-in-out;
+            transition: 0.04s ease-in-out;
+        }
+
+        .list {
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 45px;
+            left: 0px;
+            border-top: 1px solid #eee;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            background-color: white;
+        }
+
+        .item {
+            width: 200px;
+            line-height: 45px;
+            padding-left: 20px;
+            background-color: #fff;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            font-weight: 400;
+            font-size: 11px;
+            color: black;
+        }
+
+        .item:hover {
+            background-color: #eee;
+        }
+
+        .list-4 {
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+            z-index: 10;
+        }
+
+        #drop-4:checked~.list-4 {
+            visibility: visible;
+            opacity: 2;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 44px;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .main {
+            display: inline-block;
+            margin-bottom: 50px;
+
+
+            position: relative;
+            width: 150px;
+            text-align: left;
+        }
+
+        #label2 {
+            width: 100%;
+            position: absolute;
+            line-height: 45px;
+            top: 0px;
+            left: 0px;
+
+
+            font-weight: 700;
+            -webkit-transition: 0.04s ease-in-out;
+            transition: 0.04s ease-in-out;
+        }
+
+        .list1 {
+            width: 150px;
+            position: absolute;
+            z-index: 1;
+            top: 45px;
+            left: -20px;
+            border-top: 1px solid #eee;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            background-color: white;
+            color: #23255c;
+        }
+
+        .item22 {
+            width: 100%;
+            line-height: 45px;
+            padding-left: 20px;
+            background-color: #fff;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            font-weight: 400;
+            color: #23255c;
+        }
+
+        .item:hover {
+            background-color: #eee;
+        }
+
+        .list-5 {
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+            z-index: 10;
+        }
+
+        #drop-5:checked~.list-5 {
+            visibility: visible;
+            opacity: 2;
+        }
+
+        #drop-5:checked~.list-5 {
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+        #mail::-webkit-input-placeholder { color:white; }
+    </style>
+</head>
+
+<body style="background-color: #23255c; overflow-x: hidden;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <img src="img/Frame wlogo.png" alt=""
+                style="height:45px; width:260px; margin-left: 30px; padding-left: 40px;">
+
+
+            <div class="container-fluid">
+                <!--     
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="#">
+                <path d="M0.0634766 0H57.542V55H0.0634766V0Z" fill="white" fill-opacity="0.01" />
+                <path d="M9.64355 12.0312H47.9626" stroke="#316EEC" stroke-width="6.16667" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M28.8037 22.3438H47.9632" stroke="#316EEC" stroke-width="6.16667" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M28.8037 32.6562H47.9632" stroke="#316EEC" stroke-width="6.16667" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M9.64355 42.9688H47.9626" stroke="#316EEC" stroke-width="6.16667" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M19.2233 21.7708L9.64355 27.5L19.2233 33.2291V21.7708Z" fill="#316EEC" stroke="#316EEC"
+                  stroke-width="6.16667" stroke-linejoin="round" />
+              </svg>
+            </button>  -->
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav  " style="margin-top: 10px;">
+                        <li class="nav-item dropdown ">
+
+                            <a href="Homepage.html"
+                                style="color: #ffffff; font-family: Poppins;margin-left:12px ">HOME</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown ">
+
+                            <a href="company.html" style="color: white; font-family: Poppins;margin-left:12px  ">OUR
+                                COMPANY</a>
+
+                        </li>
+
+
+                        <li class="main">
+                            <input type="checkbox" id="drop-4" hidden>
+                            <label class="dropHeader dropHeader-4" for="drop-4">
+
+                                <span style="color: white; font-family: Poppins; "> SERVICES</span>
+                            </label>
+                            <div class="list list-4">
+                                <div> <a href="Services.html" class="item">SERVICES</a></div>
+                                <div> <a href="Web Development services (detail).html" class="item">Web Development</a></div>
+                                <div> <a href="Mobile  services(details).html" class="item">Mobile App Development</a></div>
+                                <div> <a href="Graphics Design.html" class="item">Graphics Design</a></div>
+                                <div> <a href="Digital Marketing.html" class="item">Digital Marketing</a></div>
+                                <div> <a href="Front End.html" class="item">Front End Development</a></div>
+                                <div> <a href="Enterprise Solution.html" class="item">Enterprise Solutions</a></div>
+                                <div> <a href="Back End.html" class="item">Back End Development </a></div>
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+
+
+                            <a href="Hire Developer Details.html" style="color: white; margin: 10px;font-family: Poppins;"> HIRE DELVOPER</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+
+
+                            <a href="faq.html" style="color: white; margin: 10px;font-family: Poppins;"> FAQ'S</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <a href="Contactus.html" style="color: white; margin: 10px;font-family: Poppins;"> CONTACT
+                                US</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="main">
+                    <input type="checkbox" id="drop-5" hidden>
+                    <label id="label2" class="dropHeader dropHeader-5" for="drop-5">
+                        <svg width="48" height="45" viewBox="0 0 58 55" fill="none" xmlns="#" style="margin-top:5px">
+                            <path d="M0.0634766 0H57.542V55H0.0634766V0Z" fill="white" fill-opacity="0.01" />
+                            <path d="M9.64355 12.0312H47.9626" stroke="#316EEC" stroke-width="6.16667"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M28.8037 22.3438H47.9632" stroke="#316EEC" stroke-width="6.16667"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M28.8037 32.6562H47.9632" stroke="#316EEC" stroke-width="6.16667"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.64355 42.9688H47.9626" stroke="#316EEC" stroke-width="6.16667"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.2233 21.7708L9.64355 27.5L19.2233 33.2291V21.7708Z" fill="#316EEC"
+                                stroke="#316EEC" stroke-width="6.16667" stroke-linejoin="round" />
+
+
+                        </svg>
+                    </label>
+                    <div class="list1 list-5">
+                        <div> <a href="company.html#how1" class="item22">Who We Are</a></div>
+                        <div> <a href="company.html#how" class="item22">How We Work</a></div>
+                        <div> <a href="company.html#how2" class="item22">Client Testimonial</a></div>
+                        <div> <a href="company.html#how3" class="item22">Career Overview</a></div>
+                        <div> <a href="blogpage.html" class="item22">Blog</a></div>
+                        <div> <a href="Homepage.html#tec" class="item22">Technologies</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </nav>
+    </header>
+
+
+    <section style="background-color:#23255c ; background-image:url(img/Rectangle\ 70.png)  ; background-repeat: no-repeat;
+    ; background-size:cover;height:500px; max-width:100%; background-position:right;">
+
+        <br><br><br><br><br><br><br>
+
+        <h1
+            style="color: #316eec; font-weight: bold;text-align: center;font-size: 110px; font-family: Roboto; text-shadow: 8px 6px #23255c;">
+            Services
+        </h1>
+
+    </section> <br>
+    <section style="background-color: #23255c;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+
+
+                    <!-- <div
+                        style="background-image: url(img/Rectangle2.png);height:362px; width:300px; border-radius:25px ;  "> -->
+                    <div class="card2" style=>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="img/web icon 2.gif" alt="" width="40px" height="40px"
+                                    style="margin-top:20px ;margin-left: 20px;">
+                            </div>
+                            <div class="col-2">
+                                <!-- <i style='font-size:40px; margin-left: 180px; margin-top:20px ; color: white;  '
+                                    class='fas'>&#xf061;</i> -->
+                                <i style='font-size:40px; margin-left: 180px; margin-top:20px ;color: #ffffff ;'
+                                    class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <br> <br>
+                        <h3
+                            style="color: white; text-align: left;margin-left: 20px;font-family: Roboto; font-weight: bold;">
+                            Web <br> Development
+
+                        </h3> <br>
+                        <p style="color: white; font-family: Poppins;margin-left: 20px; font-size:14px;">Create websites
+                            that are both visually appealing and functional for
+                            users.</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <div class="card2">
+                        <br>
+                        <div class="row">
+                            <div class="col-2">
+
+                                <img src="img/mobile icon.gif" alt="" width="40px" height="50px"
+                                    style="margin-top:20px ;margin-left: 20px;">
+                                <br><br>
+                            </div>
+                            <div class="col-2">
+                                <i style='font-size:40px; margin-left: 180px; margin-top:20px ;color: #ffffff ;'
+                                    class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i>
+                            </div>
+                        </div><br>
+                        <h3
+                            style="color: white; text-align: left;margin-left: 20px;font-family: Roboto; font-weight: bold;">
+                            Mobile <br> Development
+
+                        </h3><br>
+                        <p style="color: white;font-family: Poppins;margin-left: 20px; font-size:14px;">Create or
+                            enhance mobile applications,<br>ensuring optimized user
+                            experience</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card2">
+                        <br>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="img/frontend icon.gif" alt="" width="40px" height="40px"
+                                    style="margin-top:20px ;margin-left: 20px;">
+                            </div>
+                            <div class="col-2">
+                                <i style='font-size:40px; margin-left: 180px; margin-top:20px ;color: #ffffff ;'
+                                    class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i>
+                            </div>
+                        </div> <br><br>
+
+                        <h3
+                            style="color: white;text-align: left;margin-left: 20px;font-family: Roboto; font-weight: bold;">
+                            Front End<br> Development
+
+                        </h3><br>
+                        <p style="color: white;font-family: Poppins;margin-left: 20px; font-size:14px;">Provides
+                            advanced protection for your data and systems against threats.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <div class="col-4">
+
+
+                    <div class="card2">
+                        <br>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="img/digital icon.gif" alt="" width="40px" height="40px"
+                                    style="margin-top:20px ;margin-left: 20px;">
+                            </div>
+                            <div class="col-2">
+                                <i style='font-size:40px; margin-left: 180px; margin-top:20px ;color: #ffffff ;'
+                                    class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i>
+                            </div>
+                        </div> <br><br>
+                        <h3
+                            style="color: white;text-align: left;margin-left: 20px;font-family: Roboto; font-weight: bold;">
+                            Digital <br> Marketing
+
+                        </h3> <br>
+                        <p style="color: white;font-family: Poppins;margin-left: 20px; font-size:14px;">Create solutions
+                            to help businesses achieve their digital marketing
+                            goals..</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card2">
+                        <br>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="img/graphics.gif" alt="" width="40px" height="40px"
+                                    style="margin-top:20px ;margin-left: 20px;">
+                            </div>
+                            <div class="col-2">
+                                <i style='font-size:40px; margin-left: 180px; margin-top:20px ;color: #ffffff ;'
+                                    class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <br><br>
+                        <h3
+                            style="color: white;text-align: left;margin-left: 20px;font-family: Roboto; font-weight: bold;">
+                            Graphics<br> Design
+
+                        </h3><br>
+                        <p style="color: white;font-family: Poppins;margin-left: 20px; font-size:14px;">Provides access
+                            to scalable computing resources to optimize their
+                            operations.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="img/frontend icon.gif" alt="" width="40px" height="40px"
+                                    style="margin-top:50px ;margin-left:20px;">
+                            </div>
+                            <div class="col-2">
+                                <i style='font-size:40px; margin-left: 180px; margin-top:50px ;color: #ffffff ;'
+                                    class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i>
+                            </div>
+                        </div> <br><br><br>
+                        <h3
+                            style="color: white; text-align: left;margin-left: 20px;font-family: Roboto; font-weight: bold; margin-top: -30px;">
+                            Back End <br> Development
+
+                        </h3><br>
+                        <p style="color: white;font-family: Poppins;margin-left: 20px; font-size:14px;">Provides
+                            customized solutions to create and maintain software
+                            applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section> <br>
+    <section style="background-color: white;overflow-x: hidden;">
+        <div class="container"> <br>
+            <h1 style="color: #23255c; text-align: center;  font-family: Roboto; font-weight: 700; font-size: 68px; ">
+                How It Works </h1>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <img src="img/honeyy web dance.gif" alt="" style="height: 200px;;margin-left:160px;">
+            </div>
+            <div class="col-6">
+                <img src="img/Group 39236.png" alt="" style="height: 150px; margin-left:-32px"> <br> <br><br>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
+                <img src="img/Group 39232.png" alt=""
+                    style="height: 100px; width: 100px; margin-left: -72px; margin-top: -42px;">
+                <img src="img/honeyy web 232545c.gif" alt="" style="margin-left:400px; height: 100px;">
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h2 style="color:#23255c ; margin-right: 15px; font-weight: bold;">01</h2>
+            <h1 style="color: #316eec; margin-right: -3px; font-weight: bold;">Discovery</h1> <br>
+            <p style="text-align: center;">We'll conduct a thorough analysis of your <br> operations, market, and
+                competition to <br> identify the best solutions for you.</p>
+            <img src="img/Group 39236.png" alt="" style="height: 150px;  margin-left:-20px;">
+        </div> <br>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/honeyy web 232545c.gif" alt="" style="height: 100px; margin-left:40px;margin-inline-start: 220px">
+            </div>
+            <div class="col-4">
+                <img src="img/file.png" alt=""
+                    style="height: 100px; width: 100px; margin-left: 140px; margin-top:42px ;">
+            </div>
+            <div class="col-4">
+                <img src="img/honeyy web dance.gif" alt="" style="height: 200px;">
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h2 style="color:#23255c ; margin-right: 19px; font-weight: bold;">02</h2>
+            <h1 style="color: #316eec; margin-right: 19px; font-weight: bold;">Planning</h1> <br>
+            <p style="text-align: center;">Once we have a clear understanding, <br> we develop a customized plan for the
+                <br>
+                services and solutions we provide.
+            </p>
+        </div> <br>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/honeyy web dance.gif" alt="" height="200px;" style="margin-left:160px;">
+            </div>
+            <div class="col-4">
+                <img src="img/Group 39236.png" alt="" style="height: 150px;  margin-left:182px;"> <br> <br><br>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <img src="img/pc.png" alt="" style="height: 100px; width: 100px; margin-left: 141px; margin-top:12px; ">
+            </div>
+
+            <div class="col-4">
+                <img src="img/honeyy web 232545c.gif" alt="" style="height: 100px;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="img/honeyy web 232545c.gif" alt="" style="margin-left: 135px;margin-top: 60px ; height: 100px; ">
+            </div>
+            <div class="col-4"> <br>
+                <div style="text-align: center;">
+                    <h2 style="color:#23255c ; margin-right: 13px;margin-top: 9px; font-weight: bold;">03</h2>
+                    <h1 style="color: #316eec; margin-right: 13px; font-weight: bold;">Development</h1> <br>
+                    <p style="text-align: center;">
+                        We begin the design and development <br> process, creating custom solutions for <br> your
+                        specific
+                        business needs.
+                    </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <img src="img/Group 39236.png" alt="" style="height: 150px;  margin-left:182px;">
+            </div>
+            <div class="col-4">
+                <img src="img/honeyy web dance.gif" alt="" style=" margin-left:190px;width: 200px; ">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/honeyy web dance.gif" alt="" style="margin-left:160px; height: 200px;">
+            </div>
+            <div class="col-4">
+                <img src="img/blue.png" alt=""
+                    style="height: 100px; width: 100px; margin-left:140px; margin-top:-15px;">
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div> <br><br>
+            <div class="col-4"> <br><br>
+                <div style="text-align: center;">
+                    <h2 style="text-align: center; font-weight: bold; margin-top: -150px;margin-right: 14px ;">04</h2>
+                    <h1 style="color: #316eec; margin-right: 13px; font-weight: bold;">Implementation</h1> <br>
+                    <p style="text-align: center;">
+                        We begin the design and development <br> process, creating custom solutions for <br> your
+                        specific
+                        business needs.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="img/honeyy web 232545c.gif" alt="" style="margin-left: 135px;margin-top:-90px ; height: 100px; ">
+            </div>
+        </div><br><br>
+    </section><br><br>
+    <section>
+        <div id="container">
+
+            <div class="box " style="background-color: white; border-radius: 25px; ">
+                <br>
+                <h1
+                    style="font-family:Roboto;text-align: left; margin-left:30px;font-weight: bold;color: #316eec; font-size: 42px;">
+                    Ready to take <br> your <span
+                        style="font-family:Poppins;font-style: italic; font-weight: lighter; color: #23255c;">
+                        Business'IT </span>
+                    <br>to the Next
+                    Level?
+                </h1>
+                <br><br><br>
+
+
+                <div
+                    style="text-align:center; font-family: Poppins; background-image: url(img/Artboard\ 1-8.png); background-position: right;background-repeat: no-repeat;
+                background-size: cover;  height:180px;width:820px; margin-left:2px;margin-top:-90px;stroke-opacity: 80%;">
+
+                    <a href="Contactus.html"> <button type="button"
+                            style="color: black; background-color: #316eec; margin-left: 500px; margin-top: 80px;padding: 0px 30px 40px 20px; border-radius: 10px; font-size: 10px; height: 40px;"
+                            class="btn"> <span style="font-size: 12px;">GET FREE
+                                CONSULTATION</span><img src="img/icons8-advance-unscreen.gif" alt=""
+                                style=" margin-left:20px;"></button></a>
+                </div>
+            </div>
+
+        </div>
+    </section> <br><br><br> 
+    <footer>
+        <div class="container">
+    
+    
+            <div class="row">
+                <br>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-4">
+     <br><br>                        <img src="img/honeyy web footer icon.gif" alt="" style="height: 70px;width:70px">
+                        </div>
+                        <div class="col-8">
+                            
+                            <h2 style="color: white; font-weight: bold; padding: 0px 0px 0px 10px;">Newsletter</h2>
+                            <div class="col-10" style="padding: 10px;">
+                                <form onsubmit="emailSend(); reset(); return false;">
+                                    <div class="input">
+                                        <div class="row" style="padding: 0px 0px 0px 10px;">
+                                            <div class="col-6" style=" padding: 0px 0px 0px 5px;" >
+                                                <input type="email" class="inputemail" name="email" id="Email2"
+                                            placeholder="Email Address" style="width: 10pc;background-color: #23255c;">
+        
+                                            </div>
+                                            
+                                            <div class="col-6" style=" margin-left:60px; margin-right: -70px;" onclick="emailSend()">
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="color:white; font-size: 15px;margin-left:-15px"></i>
+                                            </div>
+                                        </div>
+                                    
+                                </form>
+        
+                            </div>
+                       
+                        </form>
+        
+                        <script src="https://smtpjs.com/v3/smtp.js">
+                        </script>
+                        <script>
+                            function emailSend() {
+                                let email = document.getElementById("Email").value;
+        
+                                Email.send({
+                                    Host: "smtp.elasticemail.com",
+                                    Username: "mailto:shivampatel22122001@gmail.com",
+                                    Password: "32833295CE6DB9F836913A74DBC0002A7443",
+                                    To: 'mailto:hetalkpatel1710@gmail.com',
+                                    From: "mailto:shivampatel22122001@gmail.com",
+                                    Subject: "Web Development News Letter Mail",
+                                    Body: "Email:" + email
+                                }).then(
+                                    message => alert(message)
+                                );
+        
+        
+                            }
+        
+                        </script>
+                            <div class="row" style="font-size: 35px; ">
+                                <div class="col-3">
+                                    <i class="fa-brands fa-facebook-f" style="color: white; margin-left:-10px"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-instagram" style="color: white;margin-left:-10px "></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-linkedin" style="color: white;margin-left:-10px"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-threads" style="color: white;margin-left:-10px"></i>
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-3" >
+    
+                            <h2 style="color: white; font-weight: bold; font-size: 22px; "> Explore</h2>
+                            <a href="company.html">
+                                <h6 style="font-size: 12px;  color: white;
+                                font-family: Poppins;">OUR COMPANY</h6>
+                            </a>
+                            <a href="Services.html">
+                                <h6  style="font-size: 12px;  color: white;font-family: Poppins;">SERVICES</h6>
+                            </a>
+                            <a href="Hire Developer.html">
+                                <h6 style="font-size: 12px; color: white;font-family: Poppins;">HIRE DEVLOPER</h6>
+                            </a>
+                            
+                            <a href="faq.html">
+                                <h6 style="font-size: 12px;  color: white;font-family: Poppins;">FAQ'S</h6>
+                            </a>
+                            <a href="Contactus.html">
+                                <h6  style="font-size: 12px; color: white;font-family: Poppins;">CONTACT</h6>
+                            </a>
+                        </div>
+                            <div class="col-2" style="
+                             font-family: Poppins;">
+                                <h2 style="color: white; font-weight: bold;  font-size: 22px;"> Contact</h2>
+                                <h6 style="font-size: 12px; color: white;font-family: Poppins;">Email</h6>
+                                <h6 style="font-size: 12px; color: white;font-family: Poppins;">Phone</h6>
+                                <h6 style="font-size: 12px; color: white;font-family: Poppins;">Address</h6>
+                                <h6 style="font-size: 12px; color: white;font-family: Poppins;">Social Media</h6>
+                            </div>
+                            <div class="col-1">
+                                <a href="Contactus.html"> <img src="img/cta.gif "
+                                    style="height: 100px; width: 100px; ; ">
+                            </a>
+                            </div>
+                            <div class="col-4" style="padding-left: 40px;margin-left:50px"  >
+                                <div class="row" style="font-size: 30px; "  >
+                                    <div class="col-2" >
+                                        <i class="fa-solid fa-location-dot" style="color: white"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p style="font-size:13px;color:white;"> GF-28,29  Nilgiri Apartment 
+                                             B/H Sola Bhagawat,<br>
+                                            Sola, Science City-
+                                            380060</p>
+                                    </div>
+                                    <div class="row" style="margin-left:1px">   
+                                   
+                                   
+                                    <div class="col-1" >
+                                        <i class="fa-solid fa-envelope" style="color: white;"></i>
+                                    </div>
+    
+                                    <div class="col-10">
+                                        <a href="mailto:hello@honeysofttechsolutions.com">
+                                            <p style="font-size:13px;color:white;margin-left:10px;margin-top: 10px; ">
+                                              hello@honeysofttechsolutions.com</p>
+                                        </a>
+                                    </div>
+    
+                                </div>
+                                </div>
+                                <iframe style="    height:100%;
+                                width: 100%; color:	rgb(255, 255, 255); background-color:rgb(202, 195, 195);
+                                color:	rgb(255, 255, 255); background-color:rgb(202, 195, 195);
+                                align-items: flex-end;
+                                display: flex;
+                               
+                                width: 200px;
+                                height: 100px;
+                                font-size: 20px;
+                                background:transparent;
+                                color:rgb(118, 117, 120);
+                                background-color: #c0bcbc;
+                                box-shadow: 0px 2px 5px #666;
+                                border-radius: 12px;"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.3634954358718!2d72.51570177364162!3d23.08378581404425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9cb3b0000001%3A0xc34040eed954e3b4!2sHONEYY%20SOOFTTECH%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1697178979954!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+   
+   
+
+</body>
+
+</html>
